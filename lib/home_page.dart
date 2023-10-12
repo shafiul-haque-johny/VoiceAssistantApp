@@ -92,8 +92,8 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Center(
                   child: Container(
-                    height: 112,
-                    width: 112,
+                    height: 120,
+                    width: 120,
                     margin: const EdgeInsets.only(top: 4),
                     decoration: const BoxDecoration(
                       color: Pallete.assistantCircleColor,
@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Container(
-                  height: 115,
+                  height: 123,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     image: DecorationImage(
@@ -120,9 +120,9 @@ class _HomePageState extends State<HomePage> {
               visible: generatedImageUrl == null,
               child: Container(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 25, vertical: 5),
-                margin: const EdgeInsets.symmetric(horizontal: 40)
-                    .copyWith(top: 20),
+                    const EdgeInsets.symmetric(horizontal: 25, vertical: 8),
+                margin: const EdgeInsets.symmetric(horizontal: 35)
+                    .copyWith(top: 30),
                 decoration: BoxDecoration(
                     border: Border.all(
                       color: Pallete.borderColor,
@@ -130,7 +130,7 @@ class _HomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.circular(20.0)
                         .copyWith(topLeft: Radius.zero)),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 5),
+                  padding: const EdgeInsets.symmetric(vertical: 10),
                   child: Text(
                     generatedContent == null
                         ? "Good Morning, Johny! What task can i do for you?"
@@ -138,7 +138,7 @@ class _HomePageState extends State<HomePage> {
                     style: TextStyle(
                         fontFamily: 'Cera Pro',
                         color: Pallete.mainFontColor,
-                        fontSize: generatedContent == null ? 18 : 20),
+                        fontSize: generatedContent == null ? 25 : 20),
                   ),
                 ),
               ),
@@ -158,12 +158,12 @@ class _HomePageState extends State<HomePage> {
               child: Container(
                 padding: const EdgeInsets.all(10),
                 alignment: Alignment.centerLeft,
-                margin: const EdgeInsets.only(top: 6, left: 25),
+                margin: const EdgeInsets.only(top: 10, left: 25),
                 child: const Text(
                   'Here are a few features',
                   style: TextStyle(
                     fontFamily: 'Cera pro',
-                    fontSize: 16,
+                    fontSize: 20,
                     color: Pallete.mainFontColor,
                     fontWeight: FontWeight.bold,
                   ),

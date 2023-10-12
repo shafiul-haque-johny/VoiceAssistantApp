@@ -15,7 +15,7 @@ class FeatureBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 35),
       decoration: BoxDecoration(
         color: color,
         borderRadius: const BorderRadius.all(
@@ -23,7 +23,7 @@ class FeatureBox extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 6)
+        padding: const EdgeInsets.symmetric(vertical: 10.0)
             .copyWith(left: 15, right: 10),
         child: Column(
           children: [
@@ -34,7 +34,7 @@ class FeatureBox extends StatelessWidget {
                 style: const TextStyle(
                     fontFamily: 'Cera Pro',
                     color: Pallete.blackColor,
-                    fontSize: 16,
+                    fontSize: 18,
                     fontWeight: FontWeight.bold),
               ),
             ),
@@ -44,9 +44,10 @@ class FeatureBox extends StatelessWidget {
               child: Text(
                 descriptionText,
                 style: const TextStyle(
-                    fontFamily: 'Cera Pro',
-                    color: Pallete.blackColor,
-                    fontSize: 14),
+                  fontFamily: 'Cera Pro',
+                  color: Pallete.blackColor,
+                  fontSize: 14,
+                ),
               ),
             ),
           ],
